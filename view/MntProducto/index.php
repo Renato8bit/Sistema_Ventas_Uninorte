@@ -698,7 +698,7 @@
           <p class="mg-b-25 mg-lg-b-50">Searching, ordering and paging goodness will be immediately added to the table, as shown in this example.</p>
 
           <div class="table-wrapper">
-            <table id="datatable1" class="table display responsive nowrap">
+            <table id="producto_data" class="table display responsive nowrap">
               <thead>
                 <tr>
                   <th class="wd-15p">Nombre producto</th>
@@ -743,16 +743,10 @@
     <script src="../../public/lib/datatables/jquery.dataTables.js"></script>
     <script src="../../public/lib/datatables-responsive/dataTables.responsive.js"></script>
 
-    <script src="../../public/js/bracket.js"></script>
-    <script>
-      $('#datatable1').DataTable({
-        responsive: true,
-        language: {
-          searchPlaceholder: 'Search...',
-          sSearch: '',
-          lengthMenu: '_MENU_ items/page',
-        }
-      });
-      </script>
+  <script src="../../public/js/bracket.js"></script>
+
+    <script src="mntProducto.js"></script>
+    
+      
   </body>
 </html>
