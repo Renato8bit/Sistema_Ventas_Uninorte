@@ -14,7 +14,7 @@ class Conectar
             $this->dbh = new PDO(
                 "mysql:host=localhost;dbname=ventas",
                 "root",
-                ""
+                "eli18092004"
             );
 
             // Retorna la conexión establecida
