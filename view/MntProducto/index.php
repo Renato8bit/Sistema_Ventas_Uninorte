@@ -709,18 +709,7 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>Agua mineral 2L</td>
-                  <td><button class="btn btn-primary">Editar</button></td>
-                  <td><button class="btn btn-danger">Eliminar</button></td>
-                  
-                </tr>
-                 <tr>
-                  <td>Gaseosa Coca Cola descartable 2L</td>
-                  <td><button class="btn btn-primary">Editar</button></td>
-                  <td><button class="btn btn-danger">Eliminar</button></td>
-                  
-                </tr>
+                
                 
               </tbody>
             </table>

@@ -13,7 +13,7 @@ class Producto extends Conectar
         parent::set_names();
 
         // Consulta SQL para obtener todos los productos
-        $sql = "SELECT * FROM tm_producto WHERE estado = 1";
+        $sql = "SELECT * FROM tm_producto WHERE est = 1";
 
         // Prepara la consulta SQL
         $sql = $conectar->prepare($sql);
@@ -66,8 +66,8 @@ class Producto extends Conectar
         // Consulta SQL para eliminar el producto
         $sql = "UPDATE tm_producto
                 SET
-                    estado = 0,
-                    fecha_elim = now()
+                    est = 0,
+                    fech_elim = now()
                 WHERE
                     prod_id = ?";
 
@@ -98,7 +98,7 @@ class Producto extends Conectar
 
         // Consulta SQL para insertar un producto
         $sql = "INSERT INTO tm_producto
-                (prod_id, prod_nom, fecha_crea, fecha_modi, fecha_elim, estado)
+                (prod_id, prod_nom, fech_crea, fech_modi, fech_elim, est)
                 VALUES (NULL, ?, now(), NULL, NULL, 1)";
 
         // Prepara la consulta
@@ -122,7 +122,7 @@ class Producto extends Conectar
         $sql="UPDATE tb_producto
             SET
                 prod_nom=?,
-                fecha_modi=now()
+                fech_modi=now()
             WHERE
                 prod_id = ?;";
         $sql=$conectar->prepare($sql);
